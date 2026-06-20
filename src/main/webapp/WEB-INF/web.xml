@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <display-name>Animal Adoption</display-name>
+
+    
+
+
+    <!-- DELETE ANIMAL -->
+    <servlet>
+        <servlet-name>DeleteAnimalServlet</servlet-name>
+        <servlet-class>com.animaladoption.servlet.DeleteAnimalServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteAnimalServlet</servlet-name>
+        <url-pattern>/DeleteAnimalServlet</url-pattern>
+    </servlet-mapping>
+    
+   
+
+
+<servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.animaladoption.servlet.RegisterServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+    <servlet-name>AdoptServlet</servlet-name>
+    <servlet-class>com.animaladoption.servlet.AdoptServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AdoptServlet</servlet-name>
+    <url-pattern>/AdoptServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>UpdateRequestServlet</servlet-name>
+    <servlet-class>com.animaladoption.servlet.UpdateRequestServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>UpdateRequestServlet</servlet-name>
+    <url-pattern>/UpdateRequestServlet</url-pattern>
+</servlet-mapping>
+
+</web-app>
